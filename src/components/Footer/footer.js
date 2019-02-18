@@ -1,16 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Box } from "grommet";
 import "./footer.scss"
 
 const Footer = () => (
-  <div className="footer">
+  <Box
+    className="footer"
+    direction='row'
+    justify='between'
+    border={{ side: 'top' }}
+    pad='medium'
+    gap='small'
+    flex={false}
+  >
     <Box
-      tag='footer'
       direction='row'
       justify='between'
       pad='medium'
-      border={{ side: 'top' }}
       gap='small'
       flex={false}
     >
@@ -29,8 +35,16 @@ const Footer = () => (
         </li>
       </ul>
     </Box>
-    I am a Footer
-  </div>
+    <Box
+      direction='row'
+      justify='between'
+      pad='medium'
+      gap='small'
+      flex={false}
+    >
+      © 2019 Kokio All Rights Reserved
+    </Box>
+  </Box>
 );
 
 export default Footer
