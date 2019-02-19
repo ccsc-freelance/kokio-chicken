@@ -6,18 +6,18 @@ import "./footer.scss"
 const Footer = () => (
   <Box
     className="footer"
-    direction='row'
-    justify='between'
-    border={{ side: 'top' }}
-    pad='medium'
-    gap='small'
+    direction="row"
+    justify="between"
+    border={{ side: "top" }}
+    pad="medium"
+    gap="small"
     flex={false}
   >
     <Box
-      direction='row'
-      justify='between'
-      pad='medium'
-      gap='small'
+      direction="row"
+      justify="between"
+      pad="medium"
+      gap="small"
       flex={false}
     >
       <ul>
@@ -36,10 +36,10 @@ const Footer = () => (
       </ul>
     </Box>
     <Box
-      direction='row'
-      justify='between'
-      pad='medium'
-      gap='small'
+      direction="row"
+      justify="between"
+      pad="medium"
+      gap="small"
       flex={false}
     >
       © 2019 Kokio All Rights Reserved

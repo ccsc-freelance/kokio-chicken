@@ -3,13 +3,15 @@ import Header from "../Header/header"
 import Footer from "../Footer/footer"
 
 class Layout extends React.Component {
-    render() {
-        return <div>
+  render() {
+    return (
+      <div>
         <Header />
-            { this.props.children }
+        {this.props.children}
         <Footer />
-    </div>   
-    }
+      </div>
+    )
+  }
 }
 
 export default Layout
