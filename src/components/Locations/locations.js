@@ -1,9 +1,12 @@
 import React from "react";
+import { Heading } from "grommet";
+// import Paragraph from "../Paragraph/paragraph"
 
 const Locations = () => (
-    <div>
-      <h2>Locations</h2>
-    </div>
+  /* Insert google map here */
+  <div className="full-page-container">
+    <Heading margin="none">CHANCES ARE, WE'RE PRETTY CLOSE TO YOU.</Heading>
+  </div>
 );
 
 export default Locations

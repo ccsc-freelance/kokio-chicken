@@ -1,34 +1,42 @@
 import React from "react";
-import { Distribution, Image, Box, Text } from "grommet";
+import { Distribution, Image, Box, Button } from "grommet";
+import { LinkNext } from "grommet-icons";
 import "./home.scss"
 
 const Home = () => (
   /* Insert landing screen here */
-  <Distribution
-    values={[
-      { text: 'MENU', value: 25, color: "light-3" },
-      { text: 'OUR STORY', value: 25, color: "brand" },
-      { text: 'LOCATIONS', value: 25, color: "accent-1" },
-      { text: 'CATERING', value: 25, color: "light-3" }
-    ]}
-  >
-    {value => (
-      <Box
-        className="mini-page-container"
-        background={value.color}
-        direction="row"
-        justify="center"
-        pad="small"
-        fill
-      >
-        <Image
-          fit="cover"
-          src="img/menu-page-img.png"
-        />
-        <Text className="mini-page-label" size="large">{value.text}</Text>
-      </Box>
-    )}
-  </Distribution>
-);
+  <div className="mini-pages-container">
+    <Distribution
+      className="mini-pages-layout"
+      values={[
+        { text: 'MENU', value: 25 },
+        { text: 'OUR STORY', value: 25 },
+        { text: 'LOCATIONS', value: 25 },
+        { text: 'CATERING', value: 25 }
+      ]}
+    >
+      {value => (
+        <Box
+          className="mini-page"
+          background={value.color}
+          direction="row"
+          align="end"
+        >
+          <Image
+            fit="cover"
+            src="img/menu-page-img.png"
+          />
+          <Button
+            className="mini-page-label"
+            label={value.text}
+            icon={<LinkNext />}
+            reverse
+            onClick={() => {}}
+          />
+        </Box>
+      )}
+    </Distribution>
+  </div>
+)
 
 export default Home

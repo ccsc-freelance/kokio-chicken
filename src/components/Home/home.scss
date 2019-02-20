@@ -1,4 +1,14 @@
-.mini-page-container {
+.mini-pages-container {
+  padding: 50px 0;
+}
+
+.mini-pages-layout {
+  background-color: #696969;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mini-page {
   position: relative;
   padding: 0;
   background: none;
@@ -7,4 +17,25 @@
 .mini-page-label {
   color: #ffffff;
   position: absolute;
+  border: none;
+  font-size: 24px;
+  padding: 4px;
+  left: 52px;
+  bottom: 40px;
+
+  &:hover {
+    box-shadow: none;
+    
+    svg {
+      transform: translate(3px, 0);
+    }
+  }
+
+  svg {
+    stroke: #ffffff;
+    position: relative;
+    top: -2px;
+    right: -5px;
+    transition: 0.2s ease-in-out;
+  }
 }
