@@ -1,0 +1,30 @@
+@import "../../breakpoints";
+
+.menu-header {
+  position: relative;
+  margin-bottom: 10px;
+
+  @include for-size(tablet-landscape-up) {
+    margin-bottom: 50px;
+  }
+}
+
+.menu-vary {
+  width: 300px;
+  margin: 25px auto 0;
+  text-align: center;
+  
+  @include for-size(tablet-landscape-up) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 3px 12% 0 0;
+    text-align: right;
+    width: 200px;
+  }
+}
+
+.menu-img {
+  object-fit: contain;
+}

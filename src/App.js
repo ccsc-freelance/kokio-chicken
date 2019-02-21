@@ -17,8 +17,8 @@ const theme = {
     font: {
       family: "Fjalla One",
       size: "14px",
-      height: "20px",
-    },
+      height: "20px"
+    }
   },
 };
 

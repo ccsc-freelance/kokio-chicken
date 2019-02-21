@@ -46,19 +46,19 @@ class Navigation extends React.Component {
           />
         </Box>
         <Box className="menu">
-          <Box className="menu-item">
+          <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
             <Link to="/">Home</Link>
           </Box>
-          <Box className="menu-item">
+          <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
             <Link to="/menu">Menu</Link>
           </Box>
-          <Box className="menu-item">
+          <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
             <Link to="/our-story">Our Story</Link>
           </Box>
-          <Box className="menu-item">
+          <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
             <Link to="/locations">Locations</Link>
           </Box>
-          <Box className="menu-item">
+          <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
             <Link to="/catering">Catering</Link>
           </Box>
         </Box>

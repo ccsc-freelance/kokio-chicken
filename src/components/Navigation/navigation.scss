@@ -12,12 +12,12 @@ section {
 }
 
 .menu {
-  width: 320px;
+  width: 300px;
   height: 100%;
   background: #FFF;
   position: fixed;
   top: 0;
-  right: -320px;
+  right: -300px;
   transition: right 0.1s;
 }
 
@@ -34,7 +34,7 @@ section {
 
   &.close {
     .menu {
-      right: -320px;
+      right: -300px;
     }
   
     .line {
@@ -58,17 +58,25 @@ section {
 }
 
 .menu-item {
-  color: #000;
+  font-size: 2em;
   width: 100%;
-  padding: 1rem 3rem;
   box-sizing: border-box;
-
+  
   &:first-child {
     margin-top: 180px;
   }
-
+  
   &:hover {
-    background: #91966E;
+    background: #000000;
     cursor: pointer;
+
+    a {
+      color: #ffffff;
+    }
+  }
+  
+  a {
+    color: #000000;
+    padding: 1rem 3rem;
   }
 }
