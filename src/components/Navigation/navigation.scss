@@ -1,3 +1,5 @@
+@import "../../breakpoints";
+
 section {
   background: #E4E4E6;
   padding: 6rem 3rem;
@@ -12,12 +14,12 @@ section {
 }
 
 .menu {
-  width: 300px;
+  width: 270px;
   height: 100%;
   background: #FFF;
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -270px;
   transition: right 0.1s;
 }
 
@@ -34,7 +36,7 @@ section {
 
   &.close {
     .menu {
-      right: -300px;
+      right: -270px;
     }
   
     .line {
@@ -52,9 +54,13 @@ section {
 .logo {
   position: absolute;
   right: 0;
-  margin: 45px;
+  margin: 25px;
   z-index: 2;
   cursor: pointer;
+
+  @include for-size(tablet-landscape-up) {
+    margin: 45px;
+  }
 }
 
 .menu-item {

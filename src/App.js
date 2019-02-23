@@ -1,6 +1,6 @@
 import React from "react";
-import { Grommet } from "grommet";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Grommet } from "grommet";
 
 import Layout from "./components/Layout/layout"
 import Home from "./components/Home/home"
@@ -8,9 +8,6 @@ import Menu from "./components/Menu/menu"
 import OurStory from "./components/OurStory/ourStory"
 import Locations from "./components/Locations/locations"
 import Catering from "./components/Catering/catering"
-
-// font-family: "Fjalla One", sans-serif;
-// font-family: "Average", serif;
 
 const theme = {
   global: {
@@ -37,11 +34,5 @@ const BasicExample = () => (
     </Grommet>
   </Router>
 );
-
-// const Locations = ({ match }) => (
-//   <div>
-//     <h3>{match.params.locationId}</h3>
-//   </div>
-// );
 
 export default BasicExample;

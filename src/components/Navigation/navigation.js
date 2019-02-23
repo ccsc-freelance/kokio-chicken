@@ -33,36 +33,40 @@ class Navigation extends React.Component {
   render() {
   	const { menuOpen } = this.state
     const navigationState = menuOpen ? 'open navigation-container' : 'close navigation-container'
-    
+    const overlayState = menuOpen ? 'overlay' : 'close overlay'
+
     return (
-    	<div className={navigationState}>
-        <Box
-          className="logo"
-          onClick={() => this.toggleMenu(menuOpen)}
-        >
-          <Image
-            fit="cover"
-            src="img/kokio-chicken-logo.png"
-          />
-        </Box>
-        <Box className="menu">
-          <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
-            <Link to="/">Home</Link>
+      <React.Fragment>
+        <div className={overlayState}></div>
+        <div className={navigationState}>
+          <Box
+            className="logo"
+            onClick={() => this.toggleMenu(menuOpen)}
+          >
+            <Image
+              fit="cover"
+              src="img/kokio-chicken-logo.png"
+            />
           </Box>
-          <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
-            <Link to="/menu">Menu</Link>
+          <Box className="menu">
+            <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
+              <Link to="/">Home</Link>
+            </Box>
+            <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
+              <Link to="/menu">Menu</Link>
+            </Box>
+            <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
+              <Link to="/our-story">Our Story</Link>
+            </Box>
+            <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
+              <Link to="/locations">Locations</Link>
+            </Box>
+            <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
+              <Link to="/catering">Catering</Link>
+            </Box>
           </Box>
-          <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
-            <Link to="/our-story">Our Story</Link>
-          </Box>
-          <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
-            <Link to="/locations">Locations</Link>
-          </Box>
-          <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
-            <Link to="/catering">Catering</Link>
-          </Box>
-        </Box>
-      </div>
+        </div>
+      </React.Fragment>
     )
   }
 }

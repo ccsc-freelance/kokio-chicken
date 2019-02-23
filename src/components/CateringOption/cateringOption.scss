@@ -1,0 +1,42 @@
+@import "../../breakpoints";
+
+.catering-option {
+  background-color: rgba(244, 16, 1, .7);
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Average";
+  margin: 0 0 20px 0;
+  padding: 27px 21px;
+  width: 100%;
+
+  @include for-size(big-phone-up) {
+    width: 380px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    margin: 0 20px 20px 0;
+    width: calc(50% - 20px);
+    max-width: 380px;
+  }
+
+  span {
+    display: block;
+  }
+  
+  .catering-option-header {
+    font-family: "Fjalla One";
+    margin-bottom: 20px;
+  }
+
+  .catering-option-item {
+    margin-bottom: 3px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .catering-option-price {
+    text-align: right;
+  }
+}
