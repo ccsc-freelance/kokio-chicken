@@ -1,63 +1,63 @@
 @import "../../breakpoints";
 
 .mini-pages-container {
-  padding: 50px 0;
+  padding: 50px 0 !important;
 }
 
 .mini-pages-layout {
-  max-width: 700px;
-  margin: 0 auto;
-  flex-direction: column;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+  flex-direction: column !important;
 
   @include for-size(big-phone-up) {
-    flex-direction: row;
+    flex-direction: row !important;
   }
   
   @include for-size(tablet-landscape-up) {
-    max-width: 800px;
+    max-width: 800px !important;
   }
 
   div[class^="StyledBox"] {
-    flex-basis: 100%;
-    flex-wrap: wrap;
+    flex-basis: 100% !important;
+    flex-wrap: wrap !important;
 
     @include for-size(big-phone-up) {
-      flex-basis: 50%;
+      flex-basis: 50% !important;
     }
   }
 }
 
 .mini-page {
-  position: relative;
-  padding: 0;
-  background: none;
-  width: 100%;
-  max-width: 430px;
-  margin: 0 auto;
+  position: relative !important;
+  padding: 0 !important;
+  background: none !important;
+  width: 100% !important;
+  max-width: 430px !important;
+  margin: 0 auto !important;
 
   &:hover {
-    box-shadow: none;
+    box-shadow: none !important;
 
     svg {
-      transform: translate(3px, 0);
+      transform: translate(3px, 0) !important;
     }
   }
 }
 
 .mini-page-label {
-  color: #ffffff;
-  position: absolute;
-  border: none;
-  font-size: 24px;
-  padding: 4px;
-  left: 52px;
-  bottom: 40px;
+  color: #ffffff !important;
+  position: absolute !important;
+  border: none !important;
+  font-size: 24px !important;
+  padding: 4px !important;
+  left: 52px !important;
+  bottom: 40px !important;
 
   svg {
-    stroke: #ffffff;
-    position: relative;
-    top: -2px;
-    right: -5px;
-    transition: 0.2s ease-in-out;
+    stroke: #ffffff !important;
+    position: relative !important;
+    top: -2px !important;
+    right: -5px !important;
+    transition: 0.2s ease-in-out !important;
   }
 }
