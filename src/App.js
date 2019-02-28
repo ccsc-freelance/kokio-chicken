@@ -23,7 +23,7 @@ const theme = {
 
 const BasicExample = () => (
   <Router>
-    <Grommet theme={theme}>
+    <Grommet theme={theme} full={true}>
       <ScrollTop>
         <div>
           <Layout>
