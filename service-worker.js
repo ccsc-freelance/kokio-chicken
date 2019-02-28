@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kokio-chicken/precache-manifest.226b72fcd3287352c6e1174007f45ebb.js"
+  "/kokio-chicken/precache-manifest.e1e5fc85e4e8f99af89405e5e3430f86.js"
 );
 
 workbox.clientsClaim();
