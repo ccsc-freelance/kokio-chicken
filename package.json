@@ -5,8 +5,6 @@
   "homepage": "http://ccsc-freelance.github.io/kokio-chicken",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "grommet": "^2.5.0",
-    "grommet-icons": "^4.2.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",

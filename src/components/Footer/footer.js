@@ -4,15 +4,7 @@ import { Box } from "grommet";
 import "./footer.scss"
 
 const Footer = () => (
-  <Box
-    className="footer"
-    direction="row"
-    justify="between"
-    border={{ side: "top" }}
-    pad="medium"
-    gap="small"
-    flex={false}
-  >
+  <div className="box footer">
     <Box
       direction="row"
       justify="between"
@@ -47,7 +39,7 @@ const Footer = () => (
     >
       © 2019 Kokio All Rights Reserved
     </Box>
-  </Box>
+  </div>
 );
 
 export default Footer

@@ -1,10 +1,10 @@
 import React from "react";
-import { Paragraph } from "grommet";
+import "./paragraph.scss";
 
 const CustomParagraph = (props) => (
-  <Paragraph className="paragraph" {...props}>
+  <p className="paragraph" {...props}>
     {props.children}
-  </Paragraph>
+  </p>
 )
 
 export default CustomParagraph

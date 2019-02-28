@@ -1,13 +1,12 @@
 import React from "react";
-import { Box, Heading } from "grommet";
 
 const Locations = () => (
   /* Insert google map here */
-  <Box className="full-page">
-    <Box className="full-page-layout">
-      <Heading margin="none">CHANCES ARE, WE'RE PRETTY CLOSE TO YOU.</Heading>
-    </Box>
-  </Box>
+  <div className="box full-page">
+    <div className="box full-page-layout">
+      <h1 margin="none">CHANCES ARE, WE'RE PRETTY CLOSE TO YOU.</h1>
+    </div>
+  </div>
 );
 
 export default Locations

@@ -1,30 +1,41 @@
 @import "../../breakpoints";
 
+.menu-page {
+  flex-direction: column;
+}
+
 .menu-header {
-  position: relative !important;
-  margin-bottom: 10px !important;
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
 
   @include for-size(tablet-landscape-up) {
-    margin-bottom: 50px !important;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    margin: 0 auto;
   }
 }
 
 .menu-vary {
-  width: 300px !important;
-  margin: 25px auto 0 !important;
-  text-align: center !important;
-  
+  width: 300px;
+  margin: 25px auto 0;
+  text-align: center;
+  color: #000000;
+  font-family: "Fjalla One";
+
   @include for-size(tablet-landscape-up) {
-    position: absolute !important;
-    top: 0 !important;
-    right: 0 !important;
-    margin: 0 !important;
-    padding: 3px 2% 0 0 !important;
-    text-align: right !important;
-    width: 200px !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 8px 2% 0 0;
+    text-align: right;
+    width: 200px;
   }
 }
 
 .menu-img {
-  object-fit: contain !important;
+  object-fit: contain;
 }

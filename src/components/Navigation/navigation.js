@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Box, Image } from "grommet";
 import "./navigation.scss";
 
 class Navigation extends React.Component {
@@ -39,32 +38,29 @@ class Navigation extends React.Component {
       <React.Fragment>
         <div className={overlayState}></div>
         <div className={navigationState}>
-          <Box
-            className="logo"
+          <div
+            className="box logo"
             onClick={() => this.toggleMenu(menuOpen)}
           >
-            <Image
-              fit="cover"
-              src="img/kokio-chicken-logo.png"
-            />
-          </Box>
-          <Box className="menu">
-            <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
+            <img src="img/kokio-chicken-logo.png" alt="logo" />
+          </div>
+          <div className="box menu">
+            <div className="box menu-item" onClick={() => this.toggleMenu(menuOpen)}>
               <Link to="/">Home</Link>
-            </Box>
-            <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
+            </div>
+            <div className="box menu-item" onClick={() => this.toggleMenu(menuOpen)}>
               <Link to="/menu">Menu</Link>
-            </Box>
-            <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
+            </div>
+            <div className="box menu-item" onClick={() => this.toggleMenu(menuOpen)}>
               <Link to="/our-story">Our Story</Link>
-            </Box>
-            <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
+            </div>
+            <div className="box menu-item" onClick={() => this.toggleMenu(menuOpen)}>
               <Link to="/locations">Locations</Link>
-            </Box>
-            <Box className="menu-item" onClick={() => this.toggleMenu(menuOpen)}>
+            </div>
+            <div className="box menu-item" onClick={() => this.toggleMenu(menuOpen)}>
               <Link to="/catering">Catering</Link>
-            </Box>
-          </Box>
+            </div>
+          </div>
         </div>
       </React.Fragment>
     )

@@ -1,42 +1,51 @@
 @import "../../breakpoints";
 
+.catering-options-container {
+  margin-top: 20px;
+}
+
 .catering-option {
-  background-color: rgba(244, 16, 1, .7) !important;
-  color: #ffffff !important;
-  display: inline-block !important;
-  font-family: "Average" !important;
-  margin: 0 0 20px 0 !important;
-  padding: 27px 21px !important;
-  width: 100% !important;
+  background-color: rgba(244, 16, 1, .7);
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Average";
+  margin: 0 0 20px 0;
+  padding: 27px 21px;
+  width: 100%;
 
   @include for-size(big-phone-up) {
-    width: 380px !important;
+    width: 380px;
   }
 
   @include for-size(tablet-portrait-up) {
-    margin: 0 20px 20px 0 !important;
-    width: calc(50% - 20px) !important;
-    max-width: 380px !important;
+    margin: 0 20px 20px 0;
+    width: calc(50% - 20px);
+    max-width: 380px;
   }
 
   span {
-    display: block !important;
+    display: block;
   }
   
   .catering-option-header {
-    font-family: "Fjalla One" !important;
-    margin-bottom: 20px !important;
+    font-family: "Fjalla One";
+    margin-bottom: 20px;
+    font-size: 24px;
+    margin: 0 0 20px;
   }
 
   .catering-option-item {
-    margin-bottom: 3px !important;
+    margin: 0 0 3px;
+    font-size: 20px;
 
     &:last-child {
-      margin-bottom: 0 !important;
+      margin-bottom: 0;
     }
   }
 
   .catering-option-price {
-    text-align: right !important;
+    text-align: right;
+    font-size: 24px;
+    margin: 0;
   }
 }

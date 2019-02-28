@@ -1,24 +1,23 @@
 import React from "react";
-import { Box, Text } from "grommet";
 import './cateringOption.scss';
 
 const CateringOption = (props) => (
-  <Box className="catering-option">
-    <Text className="catering-option-header" size="xlarge">
+  <div className="box catering-option">
+    <p className="catering-option-header" size="xlarge">
       {props.size} {props.people}
-    </Text>
+    </p>
     {
       props.items.map(item => (
-        <Text
+        <p
           className="catering-option-item"
           key={item.key}
         >
           {item.content}
-        </Text>
+        </p>
       ))
     }
-    <Text className="catering-option-price" size="large">{props.price}</Text>
-  </Box>
+    <p className="catering-option-price" size="large">{props.price}</p>
+  </div>
 )
 
 export default CateringOption

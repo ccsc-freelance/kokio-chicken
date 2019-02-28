@@ -1,25 +1,20 @@
 import React from "react";
-import { Box, Heading, Image } from "grommet";
 import Paragraph from "../Paragraph/paragraph";
 import CateringOption from "../CateringOption/cateringOption";
 import "./catering.scss";
 
 const Catering = () => (
-  <Box className="full-page">
-    <Image
-      className="full-page-background-img"
-      fit="cover"
-      src="img/menu-page-img.png"
-    />
-    <Box className="full-page-layout">
-      <Heading margin="none">ENJOY OUR FOOD IN THE COMFORT OF YOUR HOME. OR OFFICE. OR WHEREVER.</Heading>
+  <div className="box full-page">
+    <img className="full-page-background-img" src="img/menu-page-img.png" alt="menu-page-img"/>
+    <div className="box full-page-layout">
+      <h1>ENJOY OUR FOOD IN THE COMFORT OF YOUR HOME. OR OFFICE. OR WHEREVER.</h1>
       <Paragraph>
         Our catering options consist of three different sized packages.
       </Paragraph>
-      <Paragraph margin={{top: "0", bottom: "18px"}}>
+      <Paragraph style={{margin: "2px 0 0"}}>
         Whenever you're ready to order, check out our locations to find the nearest Kokio to you!
       </Paragraph>
-      <Box className="catering-options-container" direction="row">
+      <div className="box catering-options-container" direction="row">
         <CateringOption
           size="Small"
           people="(5-10 people)"
@@ -101,9 +96,9 @@ const Catering = () => (
             }
           ]}
         />
-      </Box>
-    </Box>
-  </Box>
+      </div>
+    </div>
+  </div>
 )
 
 export default Catering
