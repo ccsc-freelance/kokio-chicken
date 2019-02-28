@@ -1,17 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Box } from "grommet";
 import "./footer.scss"
 
 const Footer = () => (
   <div className="box footer">
-    <Box
-      direction="row"
-      justify="between"
-      pad="medium"
-      gap="small"
-      flex={false}
-    >
+    <div className="footer-links">
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -29,16 +22,10 @@ const Footer = () => (
           <Link to="/catering">Catering</Link>
         </li>
       </ul>
-    </Box>
-    <Box
-      direction="row"
-      justify="between"
-      pad="medium"
-      gap="small"
-      flex={false}
-    >
+    </div>
+    <div className="footer-copyright">
       © 2019 Kokio All Rights Reserved
-    </Box>
+    </div>
   </div>
 );
 
